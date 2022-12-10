@@ -1,0 +1,41 @@
+	--This is a list of Code lines for C# with the Unity framework for future use--
+	
+// take current pos, and assign it to a centered position
+// Using transform (lower case t) followed by .position, .rotation .Scale allows you to 
+change the Position(or other) on a game object the script is attacted too, depending on
+if its a 2d or 3d game you can use it with a Vector3 OR Vector2 (3 being X,Y,Z) and 2
+is X and Y 
+
+(X,Y,Z) and (X,Y) the nunmbers set inside will define the transforms function.
+a good example is Vector3(0, 0, 25); will send the object forward on the Z axis by 25
+units. 
+
+Key notes Vecttor 2 is used for 2d and X Y movemets
+most of the time you will use a "new Vector3" to define a new set of numbers
+but you can make a variable with a vector2/3 and use it as a static set of numbers
+(WATCH OUT) using "T" transform (upper case T) it can throw an error code
+	
+(USE CASE) - use it to place a player at a starting position OR for fast travel teleports 
+	
+    transform.position = new Vector3(0, 0, 0); 
+// this will place object at 0, 0, 0 or centered.
+
+
+				-- Translate and Movements via Scripting API--	
+(RefLink) file:///C:/Program%20Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Documentation/en/ScriptReference/Transform.html
+
+Transform.Translate - Moves the transform in the direction and distance of translation.
+Description - Moves the transform in the direction and distance of translation
+	
+Basic Declaration 
+public void Translate(Vector3 translation); OR
+public void Translate(Vector3 translation, Space relativeTo = Space.Self); 
+
+// Move the object forward along its z axis 1 unit/second.
+        transform.Translate(0, 0, Time.deltaTime);
+	(BREAKDOWN) transform.Translate will move the object at set amount
+	(0[x], 1[y], 0{z}) this will set the movement amount 1 unit "up" 
+	Time.deltaTime = 1/60 seconds. Locks to "60 fps" used to keep the 
+	movement at a set amount and not change based of FPS
+	
+	
