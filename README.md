@@ -4,7 +4,7 @@ Just some txt files with tips, defs, Guides, and how to use Common Scripting API
 
 In this Repo you will find a handful of txt files written in Notepad++ that have quick tips and guides for Unity API's
 this will be updated from time to time as I get around to making it, but I will provide Sudo code as well as actual code 
-with a breakdown of what im doing, and what it does. a quick example below
+with a breakdown of what im doing, and what it does. a quick example below (pullled from one of the files)
 
 ---------------------------------------------------------------------------------------------------------
 
